@@ -15,11 +15,13 @@ string[] GetCreateArray()
 	return array;
 }
 
-void PrintChar(string[] array)
+
+
+void PrintChar(string[] array, int charLength = 3)
 {
 	for (int i = 0; i < array.Length; i++)
 	{
-		if((array[i].Length) <= 3)
+		if((array[i].Length) <= charLength)
 		Console.Write(array[i] + " ");
 	}
 }
